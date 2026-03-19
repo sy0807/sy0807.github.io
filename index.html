@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이서연 | 전기공학과 2학년 소개 페이지</title>
+    <!-- Google Fonts: Noto Sans KR -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-blue: #004a99;
+            --secondary-blue: #e6f0ff;
+            --accent-blue: #007bff;
+            --text-dark: #333;
+            --bg-light: #f8fbff;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary-blue);
+            color: var(--white);
+            padding: 4rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .header-content h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .header-content p {
+            font-size: 1.2rem;
+            font-weight: 300;
+            opacity: 0.9;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+        }
+
+        section {
+            background: var(--white);
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            color: var(--primary-blue);
+            border-bottom: 2px solid var(--secondary-blue);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .intro-text {
+            font-size: 1.1rem;
+        }
+
+        .academic-list {
+            list-style: none;
+        }
+
+        .academic-list li {
+            padding: 0.5rem 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .academic-list li::before {
+            content: '•';
+            color: var(--accent-blue);
+            font-weight: bold;
+            display: inline-block;
+            width: 1rem;
+            margin-right: 0.5rem;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .contact-info a {
+            color: var(--accent-blue);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #888;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            .header-content h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1>이서연</h1>
+            <p>전기공학과 2학년</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>소개</h2>
+            <p class="intro-text">
+                전기에너지가 세상을 움직이는 방식에 깊은 관심을 가지고 공부하고 있습니다.<br>
+                회로 설계와 전력 시스템에 대한 탄탄한 기초를 다지고 있는 2학년 이서연입니다.
+            </p>
+        </section>
+
+        <section id="academic">
+            <h2>학습 분야</h2>
+            <ul class="academic-list">
+                <li>회로이론 (Circuit Theory)</li>
+                <li>전자기학 (Electromagnetics)</li>
+                <li>디지털 논리 회로 (Digital Logic Circuits)</li>
+                <li>공업수학 (Engineering Mathematics)</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>연락처</h2>
+            <div class="contact-info">
+                <p>📧 이메일: <a href="mailto:87sysy@gmail.com">87sysy@gmail.com</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 이서연. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
